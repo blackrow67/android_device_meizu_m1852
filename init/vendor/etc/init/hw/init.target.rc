@@ -56,6 +56,14 @@ on fs
     mkdir /persist/rfs/msm/slpi 0700 vendor_rfs vendor_rfs
     mkdir /persist/rfs/shared 0700 vendor_rfs vendor_rfs
 
+on late-fs
+    # Start services for bootani
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
+
 on post-fs
     start qseecomd
     exec - system system -- /vendor/bin/init.qti.qseecomd.sh
