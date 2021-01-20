@@ -69,21 +69,12 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M -256,0
-        L -200 56
-        H 200
-        L 256 0
+        M -230,0
+        L -180,50
+        H 180
+        L 230,0
         V 0
         Z
     </string>
-
-    <!-- Status bar qs offset-->
-    <dimen name="quick_qs_offset_height">56px</dimen>
-
-    <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">32</integer>
-    <!-- Minimum screen brightness setting allowed by the power manager.
-         The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">17</integer>
 
 </resources>

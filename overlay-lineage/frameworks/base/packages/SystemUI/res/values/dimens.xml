@@ -27,13 +27,4 @@
     <!-- Margin on the right side of the system icon group on Keyguard. -->
     <dimen name="system_icons_keyguard_padding_end">46px</dimen>
 
-    <dimen name="status_bar_header_height">73.0dip</dimen>
-    <dimen name="status_bar_header_height_expanded">116.0dip</dimen>
-    <dimen name="status_bar_icon_drawing_size">17.0dip</dimen>
-    <dimen name="status_bar_battery_icon_height">14.5dip</dimen>
-    <dimen name="status_bar_battery_icon_width">9.5dip</dimen>
-    <dimen name="status_bar_clock_size">13.0dip</dimen>
-    <dimen name="status_bar_wifi_signal_spacer_width">0.0dip</dimen>
-    <dimen name="status_bar_airplane_spacer_width">0.0dip</dimen>
-
 </resources>
