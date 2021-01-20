@@ -95,9 +95,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_camera \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service \
-    Snap
-
+    android.hardware.camera.provider@2.4-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSSc.so
