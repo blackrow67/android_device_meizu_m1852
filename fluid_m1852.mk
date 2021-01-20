@@ -22,12 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from m1852 device
 $(call inherit-product, device/meizu/m1852/m1852.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Fluid stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+
+# GApps
+TARGET_INCLUDE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # And credits to XiNGRZ again
 
-PRODUCT_NAME := lineage_m1852
+PRODUCT_NAME := fluid_m1852
 PRODUCT_BRAND := Meizu
 PRODUCT_DEVICE := m1852
 PRODUCT_MANUFACTURER := Meizu
@@ -41,3 +45,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="meizu_M1852_CN-user 8.1.0 OPM1.171019.026 1592244368 release-keys"
 
 BUILD_FINGERPRINT := Meizu/meizu_M1852_CN/M1852:8.1.0/OPM1.171019.026/1592244368:user/release-keys
+
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.fluid.maintainer=BlackRow67 \
+  ro.fluid.cpu=SDM710
