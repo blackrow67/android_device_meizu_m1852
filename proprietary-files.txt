@@ -179,7 +179,6 @@ vendor/lib/libsdedrm.so
 vendor/lib/libsecureui.so
 vendor/lib/libsecureui_svcsock.so
 vendor/lib/libsi.so
-vendor/lib/libspl.so|42a7cca955b5e38d8e6ea231573cdc85bf0eb2b9
 vendor/lib/libssd.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so
@@ -202,7 +201,6 @@ vendor/lib64/libsdedrm.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsi.so
-vendor/lib64/libspl.so|07af42af0b12f90ff95ab1e49b5a99b79201cc31
 vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so
@@ -1042,15 +1040,11 @@ vendor/firmware/tfa98xx.cnt
 
 # Audio - HAL
 lib/libaudioroute.so
-lib/libtinyalsa.so
 lib64/libaudioroute.so
-lib64/libtinyalsa.so
 vendor/lib/hw/audio.primary.sdm710.so
-vendor/lib/hw/sound_trigger.primary.sdm710.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib64/hw/audio.primary.sdm710.so
-vendor/lib64/hw/sound_trigger.primary.sdm710.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libtinycompress_vendor.so
 
