@@ -295,4 +295,7 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDim">10</integer>
 
+    <!-- Whether device uses linear screen brightness slider -->
+    <bool name="config_linearBrightnessSlider">true</bool>
+
 </resources>
