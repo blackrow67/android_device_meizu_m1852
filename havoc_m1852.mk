@@ -22,14 +22,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from m1852 device
 $(call inherit-product, device/meizu/m1852/m1852.mk)
 
-# Inherit some common PixelExperience stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+
+# GApps
+$(call inherit-product, vendor/gapps/config.mk)
 
 # And credits to XiNGRZ again
 
-PRODUCT_NAME := aosp_m1852
+PRODUCT_NAME := havoc_m1852
 PRODUCT_BRAND := Meizu
 PRODUCT_DEVICE := m1852
 PRODUCT_MANUFACTURER := Meizu

@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_m1852.mk
+    $(LOCAL_DIR)/havoc_m1852.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_m1852-userdebug
+    havoc_m1852-userdebug
