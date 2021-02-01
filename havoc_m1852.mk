@@ -26,7 +26,8 @@ $(call inherit-product, device/meizu/m1852/m1852.mk)
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # GApps
-$(call inherit-product, vendor/gapps/config.mk)
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH=arm64
 
 # And credits to XiNGRZ again
 
