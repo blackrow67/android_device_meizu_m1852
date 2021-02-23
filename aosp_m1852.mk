@@ -27,6 +27,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED = true
 CUSTOM_BUILD_TYPE=OFFICIAL
+PPUI_MAINTAINER := dogukangunacti
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # And credits to XiNGRZ again

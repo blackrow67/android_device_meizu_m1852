@@ -228,6 +228,3 @@ vendor.audio.adm.buffering.ms=3
 
 # Doze
 ro.sensor.proximity=true
-
-# PixelPlusUI Maintainer
-ro.pixelplusui.maintainer=blackrow67
