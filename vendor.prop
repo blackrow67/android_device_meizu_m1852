@@ -46,14 +46,6 @@ vendor.audio_hal.period_size=192
 vendor.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
-# Dalvik
-dalvik.vm.heapgrowthlimit=256m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=512k
-dalvik.vm.heapsize=512m
-dalvik.vm.heapstartsize=8m
-dalvik.vm.heaptargetutilization=0.75
-
 # Meizu
 ro.meizu.autorecorder=true
 ro.meizu.contactmsg.auth=false
