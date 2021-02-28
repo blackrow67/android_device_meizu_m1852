@@ -109,6 +109,10 @@ ro.vendor.qti.sys.fw.bservice_limit=5
 ro.product.perf.config=M1852_base
 ro.vendor.qti.sys.fw.bg_apps_limit=32
 
+# vulkan
+ro.hardware.vulkan=adreno
+ro.hardware.egl=adreno
+
 # Radio
 keyguard.no_require_sim=true
 persist.ct_volte_support=1
