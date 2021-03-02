@@ -24,5 +24,8 @@
     <!-- If true, and there is a cutout on the main built in display, the cutout will be masked
          by shrinking the display such that it does not overlap the cutout area. -->
     <bool name="config_maskMainBuiltInDisplayCutout">true</bool>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">75px</dimen>
     
 </resources>
