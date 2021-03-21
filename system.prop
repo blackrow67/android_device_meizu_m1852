@@ -198,6 +198,13 @@ iop.enable_prefetch_ofr=1
 persist.rcs.support=0
 #@}
 
+#Add by herongfeng@meizu.com for VTS test.
+ro.vendor.meizu_no_vts=1
+#Add end
+
+#Expose aux camera for below packages
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.meizu.media.camera,com.example.testcamera
+
 #FLYME_MMF_VIDEO:hvx hwjpeg{@
 persist.hvx.hwjpeg.enable=true
 ##@}
@@ -208,6 +215,10 @@ debug.hwui.use_buffer_age=false
 # Fix network traffic monitor
 ro.bpf.disabled=1
 
+# Huaqin modify for block camera id 2/3 when testing vts by lizihao at 2018/06/26 start
+persist.camera.expose.aux=1
+# Huaqin modify for block camera id 2/3 when testing vts by lizihao at 2018/06/26 end
+
 # System property for cabl
 ro.qualcomm.cabl=2
 
@@ -217,6 +228,10 @@ ro.diag.support.colortype=1
 ro.diag.mzsimtray.detect=1
 ro.diag.support.psncopy=1
 #Huaqin add for hwdiag tool by miaozhenxing at 20180608 for rom end
+
+#Huaqin add for camera config by longteng at 20180613 for camera start
+persist.camera.privapp.list=org.codeaurora.snapcam
+#Huaqin add for camera config by longteng at 20180613 for camera end
 
 #Huaqin add for M1852-470 by miaozhenxing at 20180727 start
 ro.diag.enc_wechat_key=1
