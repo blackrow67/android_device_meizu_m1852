@@ -27,8 +27,15 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED = true
 CUSTOM_BUILD_TYPE=OFFICIAL
-PPUI_MAINTAINER := dogukangunacti
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# PixelPlusUI
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.ppui.device_name=Meizu X8 \
+ro.ppui.version=3.3 \
+ro.ppui.version_code=Tanzanite \
+ro.ppui.is_official=true \
+ro.ppui.maintainer_name=dogukangunacti
 
 # And credits to XiNGRZ again
 
