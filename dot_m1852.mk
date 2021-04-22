@@ -22,12 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from m1852 device
 $(call inherit-product, device/meizu/m1852/m1852.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common dotOS stuff
+$(call inherit-product, vendor/dot/config/common.mk)
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 
 # And credits to XiNGRZ again
 
-PRODUCT_NAME := lineage_m1852
+PRODUCT_NAME := dot_m1852
 PRODUCT_BRAND := Meizu
 PRODUCT_DEVICE := m1852
 PRODUCT_MANUFACTURER := Meizu
