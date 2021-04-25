@@ -276,16 +276,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
-# VNDK-SP
+# VNDK
 PRODUCT_PACKAGES += \
-    vndk-sp \
-    com.android.vndk.current.on_vendor
+    com.android.vndk.current
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++-v27.so \
-    $(LOCAL_PATH)/vndk/libdexfile_support-v30-arm.so:$(TARGET_COPY_OUT_VENDOR)/apex/com.android.vndk.current.on_vendor/lib/libdexfile_support.so \
-    $(LOCAL_PATH)/vndk/libdexfile_support-v30-arm64.so:$(TARGET_COPY_OUT_VENDOR)/apex/com.android.vndk.current.on_vendor/lib64/libdexfile_support.so \
-    $(LOCAL_PATH)/vndk/vndksp.libraries.30.txt:$(TARGET_COPY_OUT_VENDOR)/apex/com.android.vndk.current.on_vendor/etc/vndksp.libraries.30.txt
+    $(LOCAL_PATH)/configs/vndksp.libraries.30.txt:$(TARGET_COPY_OUT_VENDOR)/apex/com.android.vndk.current.on_vendor/etc/vndksp.libraries.30.txt
 
 # Native libraries whitelist
 PRODUCT_COPY_FILES += \
