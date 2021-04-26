@@ -167,8 +167,11 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
+    android.hidl.base@1.0_system \
     libhidltransport \
-    libhwbinder
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
 
 # Init
 PRODUCT_COPY_FILES += \
@@ -285,8 +288,7 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
 # VNDK
-PRODUCT_PACKAGES += \
-    com.android.vndk.current
+PRODUCT_USE_VNDK_OVERRIDE := false
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++-v27.so \
